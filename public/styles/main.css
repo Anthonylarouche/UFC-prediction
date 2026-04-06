@@ -1,0 +1,11 @@
+
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+
+ul {
+  list-style: none;
+  padding: 0;      /* enlève l'indentation à gauche */
+  margin: 0;
+}
