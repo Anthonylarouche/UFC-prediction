@@ -27,15 +27,19 @@ next_fight_new<-next_fight%>%
 
 
 toJSON(next_fight_new, pretty = TRUE)|>
-  write( file = "Data/ufc_predictions.json")
+  write( file = "../Data/ufc_predictions.json")
 
-Date<-dbGetQuery(con, 'SELECT Date FROM Next_figth_prediction')
+pred<-dbGetQuery(con, 'SELECT * FROM Next_fight_prediction')
+
 fight<-dbGetQuery(con, 'SELECT * FROM Fight_data')
 
-if(!any(next_fight$Date %in% Date$Date)){
-  dbWriteTable(con, "Next_figth_prediction", next_fight_new, append = TRUE)
-  pred<-dbGetQuery(con, 'SELECT * FROM Next_figth_prediction')
-  
+key_cols <- c("Fighter1", "Fighter2", "Date")
+new_rows <- next_fight_new %>%
+  anti_join(pred, by = key_cols)
+
+if(nrow(new_rows)>0){
+  dbWriteTable(con, "Next_figth_prediction", new_rows, append = TRUE)
+
   pred_result_updated <- pred %>%
     left_join(
       fight %>% select(fighter_1_fighter, dates, fighter_1_res),
@@ -46,12 +50,13 @@ if(!any(next_fight$Date %in% Date$Date)){
     ) %>%
     select(-fighter_1_res.x, -fighter_1_res.y)
   
-  dbWriteTable(con, "Next_figth_prediction", pred_result_updated, overwrite = TRUE)
+  dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
 }else{
   message("Table already updated")
 }
 
 }
+
 
 
 # pred|>

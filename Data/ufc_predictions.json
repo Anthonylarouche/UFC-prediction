@@ -7,11 +7,11 @@
     "prob_win_fighter1": 0.4385
   },
   {
-    "Fighter1": "Joshua Van",
-    "Fighter2": "Tatsuro Taira",
-    "category": "Flyweight\n",
+    "Fighter1": "Azamat Murzakanov",
+    "Fighter2": "Paulo Costa",
+    "category": "Light Heavyweight\n",
     "Date": "April 11, 2026",
-    "prob_win_fighter1": 0.5179
+    "prob_win_fighter1": 0.5478
   },
   {
     "Fighter1": "Curtis Blaydes",
@@ -28,20 +28,6 @@
     "prob_win_fighter1": 0.5287
   },
   {
-    "Fighter1": "Azamat Murzakanov",
-    "Fighter2": "Paulo Costa",
-    "category": "Light Heavyweight\n",
-    "Date": "April 11, 2026",
-    "prob_win_fighter1": 0.5478
-  },
-  {
-    "Fighter1": "Patricio Freire",
-    "Fighter2": "Aaron Pico",
-    "category": "Featherweight\n",
-    "Date": "April 11, 2026",
-    "prob_win_fighter1": 0.5234
-  },
-  {
     "Fighter1": "Cub Swanson",
     "Fighter2": "Nate Landwehr",
     "category": "Featherweight\n",
@@ -49,11 +35,11 @@
     "prob_win_fighter1": 0.5883
   },
   {
-    "Fighter1": "Mateusz Gamrot",
-    "Fighter2": "Esteban Ribovics",
-    "category": "Lightweight\n",
+    "Fighter1": "Patricio Pitbull",
+    "Fighter2": "Aaron Pico",
+    "category": "Featherweight\n",
     "Date": "April 11, 2026",
-    "prob_win_fighter1": 0.5593
+    "prob_win_fighter1": 0.5146
   },
   {
     "Fighter1": "Kevin Holland",
@@ -63,6 +49,13 @@
     "prob_win_fighter1": 0.4203
   },
   {
+    "Fighter1": "Mateusz Gamrot",
+    "Fighter2": "Esteban Ribovics",
+    "category": "Lightweight\n",
+    "Date": "April 11, 2026",
+    "prob_win_fighter1": 0.5593
+  },
+  {
     "Fighter1": "Tatiana Suarez",
     "Fighter2": "Loopy Godinez",
     "category": "Women's Strawweight\n",
@@ -70,10 +63,24 @@
     "prob_win_fighter1": 0.5619
   },
   {
+    "Fighter1": "Chris Padilla",
+    "Fighter2": "MarQuel Mederos",
+    "category": "Lightweight\n",
+    "Date": "April 11, 2026",
+    "prob_win_fighter1": 0.5203
+  },
+  {
     "Fighter1": "Kelvin Gastelum",
     "Fighter2": "Vicente Luque",
     "category": "Middleweight\n",
     "Date": "April 11, 2026",
     "prob_win_fighter1": 0.4567
+  },
+  {
+    "Fighter1": "Charles Radtke",
+    "Fighter2": "Francisco Prado",
+    "category": "Welterweight\n",
+    "Date": "April 11, 2026",
+    "prob_win_fighter1": 0.5941
   }
 ]

@@ -31,7 +31,7 @@ updated_fights(con)
 
 # Update le Elo
 new_elo<-updated_elo(con)
-saveRDS(new_elo, "Model/Elo_model.rds")
+saveRDS(new_elo, "../Model/Elo_model.rds")
 
 # Scrape next fight + ajouter prédictions + fichier JSON 
 updated_nextfights(new_elo,con)
