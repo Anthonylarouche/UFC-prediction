@@ -1,6 +1,5 @@
 updated_elo<-function(con){
-df_fight_data<-tbl(con, "Fight_data") %>%
-  collect() %>%
+df_fight_data<-dbGetQuery(con, 'SELECT * FROM Fight_data')%>%
   select(date,fight_pk,fighter_1_fighter,fighter_1_res,fighter_2_fighter,weight_class)
 
 colnames(df_fight_data)<-c("date","fight_pk","Fighter_1","Result","Fighter_2","Weight_class")

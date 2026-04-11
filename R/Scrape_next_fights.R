@@ -27,7 +27,7 @@ next_fight_new<-next_fight%>%
 
 
 toJSON(next_fight_new, pretty = TRUE)|>
-  write( file = "../Data/ufc_predictions.json")
+  write( file = "Data/ufc_predictions.json")
 
 pred<-dbGetQuery(con, 'SELECT * FROM Next_fight_prediction')
 
