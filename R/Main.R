@@ -12,12 +12,12 @@ library(purrr)
 library(broom)
 library(jsonlite)
 
-source("~/Documents/UFC_prediction/R/functions.R")
-source("~/Documents/UFC_prediction/R/db.R")
-source("~/Documents/UFC_prediction/R/Scrape_fighters.R")
-source("~/Documents/UFC_prediction/R/Scrape_fights.R")
-source("~/Documents/UFC_prediction/R/Elo.R")
-source("~/Documents/UFC_prediction/R/Scrape_next_fights.R")
+source("functions.R")
+source("db.R")
+source("Scrape_fighters.R")
+source("Scrape_fights.R")
+source("Elo.R")
+source("Scrape_next_fights.R")
 
 
 con<-connect_db()

@@ -38,7 +38,7 @@ new_rows <- next_fight_new %>%
   anti_join(pred, by = key_cols)
 
 if(!any(next_fight$Date %in% pred$Date)){
-  dbWriteTable(con, "Next_figth_prediction", next_fight_new, append = TRUE)
+  dbWriteTable(con, "Next_fight_prediction", next_fight_new, append = TRUE)
   pred_result_updated <- pred %>%
     left_join(
       fight %>% select(fighter_1_fighter, dates, fighter_1_res),
@@ -52,7 +52,7 @@ if(!any(next_fight$Date %in% pred$Date)){
   dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
 }
 if(nrow(new_rows)>0){
-  dbWriteTable(con, "Next_figth_prediction", new_rows, append = TRUE)
+  dbWriteTable(con, "Next_fight_prediction", new_rows, append = TRUE)
 
   pred_result_updated <- pred %>%
     left_join(
