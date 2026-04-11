@@ -14,12 +14,12 @@ library(jsonlite)
 library(DBI)
 library(RSQLite)
 
-source("functions.R")
-source("db.R")
-source("Scrape_fighters.R")
-source("Scrape_fights.R")
-source("Elo.R")
-source("Scrape_next_fights.R")
+source("R/functions.R")
+source("R/db.R")
+source("R/Scrape_fighters.R")
+source("R/Scrape_fights.R")
+source("R/Elo.R")
+source("R/Scrape_next_fights.R")
 
 
 con<-connect_db()
