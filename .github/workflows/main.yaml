@@ -1,6 +1,8 @@
 name: UFC Auto Update
 
 on:
+  schedule:
+     - cron: "0 8 * * 0,5-6"
   workflow_dispatch:        
 
 permissions:
