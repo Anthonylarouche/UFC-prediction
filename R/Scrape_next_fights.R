@@ -37,6 +37,20 @@ key_cols <- c("Fighter1", "Fighter2", "Date")
 new_rows <- next_fight_new %>%
   anti_join(pred, by = key_cols)
 
+if(!any(next_fight$Date %in% pred$Date)){
+  dbWriteTable(con, "Next_figth_prediction", next_fight_new, append = TRUE)
+  pred_result_updated <- pred %>%
+    left_join(
+      fight %>% select(fighter_1_fighter, dates, fighter_1_res),
+      by = c("Fighter1" = "fighter_1_fighter", "Date" = "dates")
+    ) %>%
+    mutate(
+      fighter_1_res = coalesce(fighter_1_res.y, fighter_1_res.x)
+    ) %>%
+    select(-fighter_1_res.x, -fighter_1_res.y)
+  
+  dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
+}
 if(nrow(new_rows)>0){
   dbWriteTable(con, "Next_figth_prediction", new_rows, append = TRUE)
 
