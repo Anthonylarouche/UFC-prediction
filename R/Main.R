@@ -11,6 +11,8 @@ library(elo)
 library(purrr)
 library(broom)
 library(jsonlite)
+library(DBI)
+library(RSQLite)
 
 source("functions.R")
 source("db.R")
