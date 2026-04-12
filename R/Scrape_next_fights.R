@@ -73,7 +73,41 @@ if(nrow(new_rows)>0){
 
 
 
-# pred|>
-#   group_by(Date)|>
-#   summarise(accuracy = sum(fighter_1_res == "W" & prob_win_fighter1>0.5,na.rm = T)/
-#               sum(fighter_1_res == "W" | fighter_1_res == "L" ,na.rm = T))
+# pred |>
+#   mutate(Date = as.Date(Date, format = "%B %d, %Y")) |>
+#   group_by(Date) |>
+#   filter(!is.na(fighter_1_res), fighter_1_res != "D") |>
+#   summarise(
+#     accuracy = mean(
+#       (prob_win_fighter1 > 0.5) == (fighter_1_res == "W")
+#     )
+#   ) |>
+#   arrange(Date)
+# 
+# 
+# 
+# pred |>
+#   filter(!is.na(fighter_1_res), fighter_1_res != "D") |>
+#   summarise(
+#     accuracy = mean(
+#       (prob_win_fighter1 > 0.5) == (fighter_1_res == "W")
+#     )
+#   )
+# 
+# cor(
+#   pred$prob_win_fighter1,
+#   pred$fighter_1_res == "W",
+#   use = "complete.obs"
+# )
+# 
+# 
+# pred |>
+#   filter(!is.na(fighter_1_res), fighter_1_res != "D")|>
+#   mutate(bin = cut(prob_win_fighter1, breaks = seq(0,1,0.05))) |>
+#   group_by(bin) |>
+#   summarise(
+#     n = n(),
+#     win_rate = mean(fighter_1_res == "W")
+#   )
+# 
+# plot(test$bin,test$win_rate)
