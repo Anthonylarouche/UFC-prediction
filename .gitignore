@@ -1,3 +1,6 @@
 .Rproj.user/
 .RData
 .Rhistory
+.DS_Store
+UFC_prediction.Rproj
+
