@@ -4,90 +4,90 @@
     "Fighter2": "Mike Malott",
     "category": "Welterweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5011
+    "prob_win_fighter1": 0.4923
   },
   {
     "Fighter1": "Kyler Phillips",
     "Fighter2": "Charles Jourdain",
     "category": "Bantamweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5179
+    "prob_win_fighter1": 0.5092
   },
   {
     "Fighter1": "Mandel Nallo",
     "Fighter2": "Jai Herbert",
     "category": "Lightweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5254
+    "prob_win_fighter1": 0.53
   },
   {
     "Fighter1": "Jasmine Jasudavicius",
     "Fighter2": "Karine Silva",
     "category": "Women's Flyweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5413
+    "prob_win_fighter1": 0.5682
   },
   {
     "Fighter1": "Thiago Moises",
     "Fighter2": "Gauge Young",
     "category": "Lightweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5319
+    "prob_win_fighter1": 0.5602
   },
   {
     "Fighter1": "Dennis Buzukja",
     "Fighter2": "Marcio Barbosa",
     "category": "Featherweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4602
+    "prob_win_fighter1": 0.4355
   },
   {
     "Fighter1": "Julien Leblanc",
     "Fighter2": "Robert Valentin",
     "category": "Middleweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5608
+    "prob_win_fighter1": 0.5986
   },
   {
     "Fighter1": "Tanner Boser",
     "Fighter2": "Gokhan Saricam",
     "category": "Heavyweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4981
+    "prob_win_fighter1": 0.4935
   },
   {
     "Fighter1": "Melissa Croden",
     "Fighter2": "Daria Zhelezniakova",
     "category": "Women's Bantamweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4983
+    "prob_win_fighter1": 0.4951
   },
   {
     "Fighter1": "Mitch Raposo",
     "Fighter2": "Allan Nascimento",
     "category": "Flyweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4156
+    "prob_win_fighter1": 0.3609
   },
   {
     "Fighter1": "JJ Aldrich",
     "Fighter2": "Jamey-Lyn Horth",
     "category": "Women's Flyweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5182
+    "prob_win_fighter1": 0.5098
   },
   {
     "Fighter1": "John Castaneda",
     "Fighter2": "Mark Vologdin",
     "category": "Bantamweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5086
+    "prob_win_fighter1": 0.5224
   },
   {
     "Fighter1": "Jamie Siraj",
     "Fighter2": "John Yannis",
     "category": "Bantamweight\n",
     "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5224
+    "prob_win_fighter1": 0.539
   }
 ]

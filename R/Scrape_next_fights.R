@@ -19,8 +19,18 @@ next_fight <- next_fight |>
 next_fight$date <- UFC_next$dates
 colnames(next_fight)<-c("Fighter1","Fighter2","category","Date")
 
-prob_output<-elo.prob(ifelse(is.na(new_elo[next_fight$Fighter1]),1500,new_elo[next_fight$Fighter1]),
-                      ifelse(is.na( new_elo[next_fight$Fighter2]),1500,new_elo[next_fight$Fighter2]))
+prob_output <- vector(length = nrow(next_fight))
+
+for (i in seq_len(nrow(next_fight))) {
+  
+  f1 <- trimws(as.character(next_fight$Fighter1[i]))
+  f2 <- trimws(as.character(next_fight$Fighter2[i]))
+  
+  elo1 <- if (is.null(new_elo[[f1]])) 1500 else new_elo[[f1]]
+  elo2 <- if (is.null(new_elo[[f2]])) 1500 else new_elo[[f2]]
+  
+  prob_output[i] <- prob.elo(elo1, elo2, s = 235)[[1]]
+}
 
 next_fight_new<-next_fight%>%
   mutate(prob_win_fighter1 = prob_output)
@@ -33,9 +43,6 @@ pred<-dbGetQuery(con, 'SELECT * FROM Next_fight_prediction')
 
 fight<-dbGetQuery(con, 'SELECT * FROM Fight_data')
 
-key_cols <- c("Fighter1", "Fighter2", "Date")
-new_rows <- next_fight_new %>%
-  anti_join(pred, by = key_cols)
 
 if(!any(next_fight$Date %in% pred$Date)){
   dbWriteTable(con, "Next_fight_prediction", next_fight_new, append = TRUE)
@@ -50,10 +57,14 @@ if(!any(next_fight$Date %in% pred$Date)){
     select(-fighter_1_res.x, -fighter_1_res.y)
   
   dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
-}
+  message("New fights added and results updated")
+}else{
+key_cols <- c("Fighter1", "Fighter2", "Date")
+new_rows <- next_fight_new %>%
+  anti_join(pred, by = key_cols)
 if(nrow(new_rows)>0){
   dbWriteTable(con, "Next_fight_prediction", new_rows, append = TRUE)
-
+  
   pred_result_updated <- pred %>%
     left_join(
       fight %>% select(fighter_1_fighter, dates, fighter_1_res),
@@ -65,49 +76,14 @@ if(nrow(new_rows)>0){
     select(-fighter_1_res.x, -fighter_1_res.y)
   
   dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
-}else{
-  message("Table already updated")
+  message("Table updated")
+}
+message("No change")
 }
 
+
+
 }
 
 
 
-# pred |>
-#   mutate(Date = as.Date(Date, format = "%B %d, %Y")) |>
-#   group_by(Date) |>
-#   filter(!is.na(fighter_1_res), fighter_1_res != "D") |>
-#   summarise(
-#     accuracy = mean(
-#       (prob_win_fighter1 > 0.5) == (fighter_1_res == "W")
-#     )
-#   ) |>
-#   arrange(Date)
-# 
-# 
-# 
-# pred |>
-#   filter(!is.na(fighter_1_res), fighter_1_res != "D") |>
-#   summarise(
-#     accuracy = mean(
-#       (prob_win_fighter1 > 0.5) == (fighter_1_res == "W")
-#     )
-#   )
-# 
-# cor(
-#   pred$prob_win_fighter1,
-#   pred$fighter_1_res == "W",
-#   use = "complete.obs"
-# )
-# 
-# 
-# pred |>
-#   filter(!is.na(fighter_1_res), fighter_1_res != "D")|>
-#   mutate(bin = cut(prob_win_fighter1, breaks = seq(0,1,0.05))) |>
-#   group_by(bin) |>
-#   summarise(
-#     n = n(),
-#     win_rate = mean(fighter_1_res == "W")
-#   )
-# 
-# plot(test$bin,test$win_rate)

@@ -13,6 +13,7 @@ library(broom)
 library(jsonlite)
 library(DBI)
 library(RSQLite)
+library(tidyverse)
 
 source("R/functions.R")
 source("R/db.R")
