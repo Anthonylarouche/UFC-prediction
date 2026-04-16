@@ -44,7 +44,8 @@ jobs:
             "elo",
             "purrr",
             "broom",
-            "jsonlite"
+            "jsonlite",
+            "tidyverse"
           ))'
 
       # 5. Run main script
