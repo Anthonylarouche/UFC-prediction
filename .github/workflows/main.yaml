@@ -30,25 +30,21 @@ jobs:
 
       # 4. Install R packages
       - name: Install R packages
-        run: |
-          Rscript -e 'install.packages(c(
-            "rvest",
-            "httr",
-            "dplyr",
-            "tidyselect",
-            "lubridate",
-            "DBI",
-            "RSQLite",
-            "RPostgres",
-            "tidyr",
-            "elo",
-            "purrr",
-            "broom",
-            "jsonlite",
-            "tidyverse"
-          ))'
+       run: |
+    Rscript -e "install.packages(c(
+      'tidyverse',
+      'rvest',
+      'httr',
+      'lubridate',
+      'DBI',
+      'RSQLite',
+      'RPostgres',
+      'elo',
+      'broom',
+      'jsonlite'
+    ), repos='https://cloud.r-project.org')"
 
-      # 5. Run main script
+    # 5. Run main script
       - name: Run UFC pipeline
         run: Rscript R/Main.R
 
