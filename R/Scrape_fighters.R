@@ -5,6 +5,7 @@ fighters<-dbGetQuery(con, 'SELECT * FROM Fighters')
 all_links <- map_dfr(letters, \(i) {
   
   url <- paste0("http://www.ufcstats.com/statistics/fighters?char=", i, "&page=all")
+
   page <- read_html(url)
   
   # Récupère tous les liens
@@ -76,6 +77,7 @@ if(nrow(fighter_to_scrapped)!= 0){
   })
 
 dbWriteTable(con, "Fighters", fighter_stats, append = TRUE)
+message(paste0("New fighter :",fighter_to_scrapped$name))
   
 }else{
   message("No fighter to scrapped")
