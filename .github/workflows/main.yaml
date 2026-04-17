@@ -28,21 +28,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
 
-      # 4. Install R packages
       - name: Install R packages
-       run: |
-    Rscript -e "install.packages(c(
-      'tidyverse',
-      'rvest',
-      'httr',
-      'lubridate',
-      'DBI',
-      'RSQLite',
-      'RPostgres',
-      'elo',
-      'broom',
-      'jsonlite'
-    ), repos='https://cloud.r-project.org')"
+        run: Rscript -e "install.packages(c('tidyverse','rvest','httr','lubridate','DBI','RSQLite','RPostgres','elo','broom','jsonlite'), repos='https://cloud.r-project.org', dependencies=TRUE)"
 
     # 5. Run main script
       - name: Run UFC pipeline
