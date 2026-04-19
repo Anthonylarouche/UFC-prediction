@@ -1,86 +1,79 @@
 [
   {
-    "Fighter1": "Gilbert Burns",
-    "Fighter2": "Mike Malott",
-    "category": "Welterweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4923
-  },
-  {
-    "Fighter1": "Kyler Phillips",
-    "Fighter2": "Charles Jourdain",
-    "category": "Bantamweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5092
-  },
-  {
-    "Fighter1": "Mandel Nallo",
-    "Fighter2": "Jai Herbert",
-    "category": "Lightweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.53
-  },
-  {
-    "Fighter1": "Jasmine Jasudavicius",
-    "Fighter2": "Karine Silva",
-    "category": "Women's Flyweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5682
-  },
-  {
-    "Fighter1": "Thiago Moises",
-    "Fighter2": "Gauge Young",
-    "category": "Lightweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5602
-  },
-  {
-    "Fighter1": "Dennis Buzukja",
-    "Fighter2": "Marcio Barbosa",
+    "Fighter1": "Aljamain Sterling",
+    "Fighter2": "Youssef Zalal",
     "category": "Featherweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4355
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.6818
   },
   {
-    "Fighter1": "Julien Leblanc",
-    "Fighter2": "Robert Valentin",
-    "category": "Middleweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5986
-  },
-  {
-    "Fighter1": "Tanner Boser",
-    "Fighter2": "Gokhan Saricam",
-    "category": "Heavyweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4935
-  },
-  {
-    "Fighter1": "Melissa Croden",
-    "Fighter2": "Daria Zhelezniakova",
+    "Fighter1": "Norma Dumont",
+    "Fighter2": "Joselyne Edwards",
     "category": "Women's Bantamweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.4951
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.6294
   },
   {
-    "Fighter1": "JJ Aldrich",
-    "Fighter2": "Jamey-Lyn Horth",
-    "category": "Women's Flyweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5098
+    "Fighter1": "Rafa Garcia",
+    "Fighter2": "Alexander Hernandez",
+    "category": "Lightweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.4686
   },
   {
-    "Fighter1": "John Castaneda",
-    "Fighter2": "Mark Vologdin",
-    "category": "Catch Weight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.5224
-  },
-  {
-    "Fighter1": "Jamie Siraj",
-    "Fighter2": "John Yannis",
+    "Fighter1": "Davey Grant",
+    "Fighter2": "Juan Adrian Martinetti",
     "category": "Bantamweight\n",
-    "Date": "April 18, 2026",
-    "prob_win_fighter1": 0.539
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5648
+  },
+  {
+    "Fighter1": "Montel Jackson",
+    "Fighter2": "Raoni Barcelos",
+    "category": "Bantamweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5184
+  },
+  {
+    "Fighter1": "Marcus Buchecha",
+    "Fighter2": "Ryan Spann",
+    "category": "Heavyweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.3961
+  },
+  {
+    "Fighter1": "Rodolfo Vieira",
+    "Fighter2": "Eric McConico",
+    "category": "Middleweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5857
+  },
+  {
+    "Fighter1": "Jackson McVey",
+    "Fighter2": "Sedriques Dumas",
+    "category": "Middleweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.4814
+  },
+  {
+    "Fighter1": "Mayra Bueno Silva",
+    "Fighter2": "Michelle Montague",
+    "category": "Women's Bantamweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.4395
+  },
+  {
+    "Fighter1": "Jafel Filho",
+    "Fighter2": "Lucas Rocha",
+    "category": "Flyweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5443
+  },
+  {
+    "Fighter1": "Talita Alencar",
+    "Fighter2": "Julia Polastri",
+    "category": "Women's Strawweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5608
   }
 ]
