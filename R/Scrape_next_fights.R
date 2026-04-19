@@ -43,18 +43,20 @@ pred<-dbGetQuery(con, 'SELECT * FROM Next_fight_prediction')
 
 fight<-dbGetQuery(con, 'SELECT * FROM Fight_data')
 
-
-if(!any(next_fight$Date %in% pred$Date)){
-  dbWriteTable(con, "Next_fight_prediction", next_fight_new, append = TRUE)
+if(!any(next_fight_new$Date %in% pred$Date)){
+  
+  pred <- dplyr::bind_rows(pred, next_fight_new)
+  
   pred_result_updated <- pred %>%
     left_join(
       fight %>% select(fighter_1_fighter, dates, fighter_1_res),
-      by = c("Fighter1" = "fighter_1_fighter", "Date" = "dates")
+      by = c("Fighter1" = "fighter_1_fighter", "Date" = "dates"),
+      suffix = c("", ".new")
     ) %>%
     mutate(
-      fighter_1_res = coalesce(fighter_1_res.y, fighter_1_res.x)
+      fighter_1_res = coalesce(fighter_1_res, fighter_1_res.new)
     ) %>%
-    select(-fighter_1_res.x, -fighter_1_res.y)
+    select(-fighter_1_res.new)
   
   dbWriteTable(con, "Next_fight_prediction", pred_result_updated, overwrite = TRUE)
   message("New fights added and results updated")
