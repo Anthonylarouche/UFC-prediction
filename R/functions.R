@@ -66,7 +66,10 @@ scrape_fight_summary_data <- function(link){
   
   link <- link %>% read_html()
   
-  
+  fighter_links <- link |>
+    html_nodes(".b-fight-details__person a") |>
+    html_attr("href")
+
   table_df <- link %>% html_nodes("table")
   
   
@@ -131,10 +134,16 @@ scrape_fight_summary_data <- function(link){
         str_trim() %>% 
         tibble(weight_class = .))
   
-  summary_data <- cbind(summary_data, fight_details)
-  
-  summary_data %>% as_tibble()
-  
+  summary_data <- cbind(summary_data, fight_details) %>% as_tibble()
+
+  summary_data <- cbind(
+    summary_data,
+    tibble(
+      fighter_1_link = fighter_links[1],
+      fighter_2_link = fighter_links[2]
+    )
+  )
+ return(summary_data) 
 }
 
 

@@ -60,7 +60,8 @@ if(nrow(fighter_to_scrapped)!= 0){
         mutate(
           name = name,
           link = link,
-          record = record
+          record = record,
+          ID = str_replace(link,"http://www.ufcstats.com/fighter-details/","")
         )
       
       return(info_df)
@@ -77,7 +78,7 @@ if(nrow(fighter_to_scrapped)!= 0){
   })
 
 dbWriteTable(con, "Fighters", fighter_stats, append = TRUE)
-message(paste0("New fighter :",fighter_to_scrapped$name))
+message(paste0("\nNew fighter : \n",fighter_to_scrapped$name))
   
 }else{
   message("No fighter to scrapped")
