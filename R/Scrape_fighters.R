@@ -1,5 +1,5 @@
-updated_fighters<-function(con){
-  
+updated_fighters<-function(con) {
+
 fighters<-dbGetQuery(con, 'SELECT * FROM Fighters')
 
 all_links <- map_dfr(letters, \(i) {
@@ -25,62 +25,64 @@ all_links <- map_dfr(letters, \(i) {
     .groups = "drop"
   )
 
-fighter_to_scrapped <-all_links|>
-  anti_join(fighters %>% dplyr::select(link) %>% distinct(), by = "link") 
+fighter_updated_record <- map2_dfr(fighters$link, fighters$name, function(link, name){
 
-if(nrow(fighter_to_scrapped)!= 0){
-  
-  fighter_stats <- map2_dfr(fighter_to_scrapped$link, fighter_to_scrapped$name, function(link, name) {
+  tryCatch({
     
-    tryCatch({
-      
-      page <- read_html(link)
-      
-      info <- page %>%
-        html_nodes(".b-list__box-list") %>%
-        .[[1]] %>%
-        html_nodes(".b-list__box-list-item") %>%
-        html_text(trim = TRUE) %>%
-        str_replace_all("\n", "") %>%
-        str_squish()
-      
-      record <- page %>%
-        html_nodes(".b-content__title-record")%>%
-        html_text(trim = TRUE) %>%
-        str_replace_all("\n|Record:", "") %>%
-        str_squish()
-      
-      info_df <- tibble(raw = info) %>%
-        mutate(
-          label = str_extract(raw, "^[^:]+"),
-          value = str_extract(raw, "(?<=: ).*")
-        ) %>%
-        select(label, value) %>%
-        pivot_wider(names_from = label, values_from = value) %>%
-        mutate(
-          name = name,
-          link = link,
-          record = record,
-          ID = str_replace(link,"http://www.ufcstats.com/fighter-details/","")
-        )
-      
-      return(info_df)
-      
-    }, error = function(e) {
-      
-      return(tibble(
+    page <- read_html(link)
+    
+    info <- page %>%
+      html_nodes(".b-list__box-list") %>%
+      .[[1]] %>%
+      html_nodes(".b-list__box-list-item") %>%
+      html_text(trim = TRUE) %>%
+      str_replace_all("\n", "") %>%
+      str_squish()
+    
+    record <- page %>%
+      html_nodes(".b-content__title-record")%>%
+      html_text(trim = TRUE) %>%
+      str_replace_all("\n|Record:", "") %>%
+      str_squish()
+    
+    info_df <- tibble(raw = info) %>%
+      mutate(
+        label = str_extract(raw, "^[^:]+"),
+        value = str_extract(raw, "(?<=: ).*")
+      ) %>%
+      select(label, value) %>%
+      pivot_wider(names_from = label, values_from = value) %>%
+      mutate(
         name = name,
-        link = link
-      ))
-      
-    })
+        link = link,
+        record = record,
+        ID = str_replace(link,"http://www.ufcstats.com/fighter-details/","")
+      )
+    
+    return(info_df)
+    
+  }, error = function(e) {
+    
+    return(tibble(
+      name = name,
+      link = link
+    ))
     
   })
+  
+})
 
-dbWriteTable(con, "Fighters", fighter_stats, append = TRUE)
-message(paste0("\nNew fighter : \n",fighter_to_scrapped$name))
+new_fighters <-all_links|>
+  anti_join(fighters , by = "link") 
+
+dbWriteTable(con, "Fighters", fighter_updated_record, overwrite = TRUE)
+
+if(nrow(new_fighters)!= 0){
+
+message(paste0("\nNew fighter : \n",new_fighters$name))
   
 }else{
   message("No fighter to scrapped")
  }
+
 }
