@@ -1,3 +1,21 @@
+update_elo <- function(rA, rB, outcome, k = 30, s = 235) {
+  pA <- 1 / (1 + 10^(-(rA - rB)/s))
+  
+  rA_new <- rA + k * (outcome - pA)
+  rB_new <- rB + k * ((1 - outcome) - (1 - pA))
+  
+  list(rA = rA_new, rB = rB_new)
+}
+
+prob.elo<-function(rA,rB,s){
+  pA <- 1 / (1 + 10^(-(rA - rB)/s))
+  pB<-1-pA
+  list(pA = pA, Pb = pB)
+}
+
+`%||%` <- function(a, b) if (!is.null(a)) a else b
+
+
 updated_elo<-function(con){
 df_fight_data<-dbGetQuery(con, 'SELECT * FROM Fight_data')%>%
   select(date,fight_pk,fighter_1_fighter,fighter_1_res,fighter_2_fighter,weight_class)
@@ -12,22 +30,6 @@ df_elo<-df_fight_data%>%
   ))%>%
   ungroup()%>%
   arrange(fight_pk)
-
-# result<-elo.run(Result ~ Fighter_1 + Fighter_2, data = df_elo, k=30)|>
-#   final.elos()
-
-update_elo <- function(rA, rB, outcome, k = 30, s = 235) {
-  pA <- 1 / (1 + 10^(-(rA - rB)/s))
-  
-  rA_new <- rA + k * (outcome - pA)
-  rB_new <- rB + k * ((1 - outcome) - (1 - pA))
-  
-  list(rA = rA_new, rB = rB_new)
-}
-
-
-`%||%` <- function(a, b) if (!is.null(a)) a else b
-
 
 # état courant
 ratings <- list()

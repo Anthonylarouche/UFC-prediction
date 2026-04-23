@@ -221,12 +221,3 @@ scrape_round_data <- function(link){
   round_data %>% as_tibble()
   
 }
-
-
-
-prob.elo<-function(rA,rB,s){
-  pA <- 1 / (1 + 10^(-(rA - rB)/s))
-  pB<-1-pA
-  list(pA = pA , pB=pB)
-
-}
