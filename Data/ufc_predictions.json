@@ -22,7 +22,7 @@
   },
   {
     "Fighter1": "Davey Grant",
-    "Fighter2": "Juan Adrian Martinetti",
+    "Fighter2": "Adrian Luna Martinetti",
     "category": "Bantamweight\n",
     "Date": "April 25, 2026",
     "prob_win_fighter1": 0.5648
@@ -64,10 +64,24 @@
   },
   {
     "Fighter1": "Jafel Filho",
-    "Fighter2": "Lucas Rocha",
+    "Fighter2": "Cody Durden",
     "category": "Flyweight\n",
     "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5443
+    "prob_win_fighter1": 0.6229
+  },
+  {
+    "Fighter1": "Francis Marshall",
+    "Fighter2": "Lucas Brennan",
+    "category": "Lightweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.4975
+  },
+  {
+    "Fighter1": "Max Griffin",
+    "Fighter2": "Victor Valenzuela",
+    "category": "Welterweight\n",
+    "Date": "April 25, 2026",
+    "prob_win_fighter1": 0.5232
   },
   {
     "Fighter1": "Talita Alencar",
