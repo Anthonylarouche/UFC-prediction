@@ -25,7 +25,7 @@ all_links <- map_dfr(letters, \(i) {
     .groups = "drop"
   )
 
-fighter_updated_record <- map2_dfr(fighters$link, fighters$name, function(link, name){
+fighter_updated_record <- map2_dfr(all_links$link, all_links$name, function(link, name){
 
   tryCatch({
     
