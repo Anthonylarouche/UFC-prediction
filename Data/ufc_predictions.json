@@ -1,93 +1,86 @@
 [
   {
-    "Fighter1": "Aljamain Sterling",
-    "Fighter2": "Youssef Zalal",
-    "category": "Featherweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.6818
-  },
-  {
-    "Fighter1": "Norma Dumont",
-    "Fighter2": "Joselyne Edwards",
-    "category": "Women's Bantamweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.6294
-  },
-  {
-    "Fighter1": "Rafa Garcia",
-    "Fighter2": "Alexander Hernandez",
-    "category": "Lightweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.4686
-  },
-  {
-    "Fighter1": "Davey Grant",
-    "Fighter2": "Adrian Luna Martinetti",
-    "category": "Bantamweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5648
-  },
-  {
-    "Fighter1": "Montel Jackson",
-    "Fighter2": "Raoni Barcelos",
-    "category": "Bantamweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5184
-  },
-  {
-    "Fighter1": "Marcus Buchecha",
-    "Fighter2": "Ryan Spann",
-    "category": "Heavyweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.3961
-  },
-  {
-    "Fighter1": "Rodolfo Vieira",
-    "Fighter2": "Eric McConico",
-    "category": "Middleweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5857
-  },
-  {
-    "Fighter1": "Jackson McVey",
-    "Fighter2": "Sedriques Dumas",
-    "category": "Middleweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.4814
-  },
-  {
-    "Fighter1": "Mayra Bueno Silva",
-    "Fighter2": "Michelle Montague",
-    "category": "Women's Bantamweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.4395
-  },
-  {
-    "Fighter1": "Jafel Filho",
-    "Fighter2": "Cody Durden",
-    "category": "Flyweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.6229
-  },
-  {
-    "Fighter1": "Francis Marshall",
-    "Fighter2": "Lucas Brennan",
-    "category": "Lightweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.4975
-  },
-  {
-    "Fighter1": "Max Griffin",
-    "Fighter2": "Victor Valenzuela",
+    "Fighter1": "Jack Della Maddalena",
+    "Fighter2": "Carlos Prates",
     "category": "Welterweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5232
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.566
   },
   {
-    "Fighter1": "Talita Alencar",
-    "Fighter2": "Julia Polastri",
-    "category": "Women's Strawweight\n",
-    "Date": "April 25, 2026",
-    "prob_win_fighter1": 0.5608
+    "Fighter1": "Beneil Dariush",
+    "Fighter2": "Quillan Salkilld",
+    "category": "Lightweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.6213
+  },
+  {
+    "Fighter1": "Tim Elliott",
+    "Fighter2": "Steve Erceg",
+    "category": "Flyweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5217
+  },
+  {
+    "Fighter1": "Shamil Gaziev",
+    "Fighter2": "Brando Pericic",
+    "category": "Heavyweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.4753
+  },
+  {
+    "Fighter1": "Tai Tuivasa",
+    "Fighter2": "Louie Sutherland",
+    "category": "Heavyweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5522
+  },
+  {
+    "Fighter1": "Cam Rowston",
+    "Fighter2": "Robert Bryczek",
+    "category": "Middleweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5675
+  },
+  {
+    "Fighter1": "Junior Tafa",
+    "Fighter2": "Kevin Christian",
+    "category": "Light Heavyweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.4465
+  },
+  {
+    "Fighter1": "Jacob Malkoun",
+    "Fighter2": "Gerald Meerschaert",
+    "category": "Middleweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.6311
+  },
+  {
+    "Fighter1": "Colby Thicknesse",
+    "Fighter2": "Vince Morales",
+    "category": "Bantamweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.6243
+  },
+  {
+    "Fighter1": "Ben Johnston",
+    "Fighter2": "Wes Schultz",
+    "category": "Middleweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5367
+  },
+  {
+    "Fighter1": "Jonathan Micallef",
+    "Fighter2": "Themba Gorimbo",
+    "category": "Welterweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5399
+  },
+  {
+    "Fighter1": "Dom Mar Fan",
+    "Fighter2": "Kody Steele",
+    "category": "Lightweight\n",
+    "Date": "May 02, 2026",
+    "prob_win_fighter1": 0.5779
   }
 ]
