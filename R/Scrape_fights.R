@@ -20,17 +20,16 @@ updated_fights<-function(con){
         unnest(fight_data)  %>% 
         distinct()
       
-      df_raw<- rbind(df,scraped_cards[,-39])%>% # Ici je dois mettre quelque chose de plus robuste
+      df_raw<- bind_rows(df,scraped_cards|>
+                           select(!contains("fight_pk")))%>% 
         mutate(row_num = row_number()) %>% 
         arrange(desc(row_num)) %>% 
         mutate(fight_pk = row_number()) %>% 
         arrange(row_num) %>% 
         dplyr::select(-row_num) 
       
-      
     }
     
-   
     ######### Obtenir une version complète 1 ligne = 1 combat #################
     
     if(nrow(UFC) != 0){
@@ -83,4 +82,5 @@ dbWriteTable(con,"Fight_data", df_clean,row.names = FALSE,overwrite = TRUE)
     }else{
       message("Aucune données à nettoyer")
     }    
-  }
+}
+
