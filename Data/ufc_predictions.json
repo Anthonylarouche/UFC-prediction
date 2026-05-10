@@ -1,93 +1,93 @@
 [
   {
-    "Fighter1": "Khamzat Chimaev",
-    "Fighter2": "Sean Strickland",
-    "category": "Middleweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5687
-  },
-  {
-    "Fighter1": "Joshua Van",
-    "Fighter2": "Tatsuro Taira",
-    "category": "Flyweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5283
-  },
-  {
-    "Fighter1": "Alexander Volkov",
-    "Fighter2": "Waldo Cortes Acosta",
-    "category": "Heavyweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.6543
-  },
-  {
-    "Fighter1": "Sean Brady",
-    "Fighter2": "Joaquin Buckley",
-    "category": "Welterweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.512
-  },
-  {
-    "Fighter1": "King Green",
-    "Fighter2": "Jeremy Stephens",
-    "category": "Lightweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.6586
-  },
-  {
-    "Fighter1": "Ateba Gautier",
-    "Fighter2": "Ozzy Diaz",
-    "category": "Middleweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.6179
-  },
-  {
-    "Fighter1": "Joel Alvarez",
-    "Fighter2": "Yaroslav Amosov",
-    "category": "Welterweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.7103
-  },
-  {
-    "Fighter1": "Grant Dawson",
-    "Fighter2": "Mateusz Rebecki",
-    "category": "Lightweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.6973
-  },
-  {
-    "Fighter1": "Jim Miller",
-    "Fighter2": "Jared Gordon",
-    "category": "Lightweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.53
-  },
-  {
-    "Fighter1": "Roman Kopylov",
-    "Fighter2": "Marco Tulio",
-    "category": "Middleweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5195
-  },
-  {
-    "Fighter1": "Pat Sabatini",
-    "Fighter2": "William Gomis",
+    "Fighter1": "Arnold Allen",
+    "Fighter2": "Melquizael Costa",
     "category": "Featherweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5608
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5554
   },
   {
-    "Fighter1": "Baisangur Susurkaev",
-    "Fighter2": "Djorden Santos",
+    "Fighter1": "Dooho Choi",
+    "Fighter2": "Daniel Santos",
+    "category": "Featherweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.4621
+  },
+  {
+    "Fighter1": "Malcolm Wellmaker",
+    "Fighter2": "Juan Diaz",
+    "category": "Bantamweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5258
+  },
+  {
+    "Fighter1": "Modestas Bukauskas",
+    "Fighter2": "Rodolfo Bellato",
+    "category": "Light Heavyweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5444
+  },
+  {
+    "Fighter1": "Timmy Cuamba",
+    "Fighter2": "Benardo Sopaj",
+    "category": "Bantamweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5089
+  },
+  {
+    "Fighter1": "Jeremiah Wells",
+    "Fighter2": "Nicolas Dalby",
+    "category": "Welterweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.4731
+  },
+  {
+    "Fighter1": "Tuco Tokkos",
+    "Fighter2": "Ivan Erslan",
+    "category": "Light Heavyweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5694
+  },
+  {
+    "Fighter1": "Trey Ogden",
+    "Fighter2": "Tommy Gantt",
+    "category": "Lightweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5083
+  },
+  {
+    "Fighter1": "Ketlen Vieira",
+    "Fighter2": "Jacqueline Cavalcanti",
+    "category": "Women's Bantamweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.4577
+  },
+  {
+    "Fighter1": "Cody Brundage",
+    "Fighter2": "Andre Petroski",
     "category": "Middleweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5681
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.3163
   },
   {
-    "Fighter1": "Clayton Carpenter",
-    "Fighter2": "Jose Ochoa",
+    "Fighter1": "Alice Ardelean",
+    "Fighter2": "Polyana Viana",
+    "category": "Women's Strawweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.585
+  },
+  {
+    "Fighter1": "Daniel Barez",
+    "Fighter2": "Luis Gurule",
     "category": "Flyweight\n",
-    "Date": "May 09, 2026",
-    "prob_win_fighter1": 0.5207
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5702
+  },
+  {
+    "Fighter1": "Shauna Bannon",
+    "Fighter2": "Nicolle Caliari",
+    "category": "Women's Strawweight\n",
+    "Date": "May 16, 2026",
+    "prob_win_fighter1": 0.5756
   }
 ]
