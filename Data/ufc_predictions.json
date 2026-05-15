@@ -22,10 +22,10 @@
   },
   {
     "Fighter1": "Modestas Bukauskas",
-    "Fighter2": "Rodolfo Bellato",
-    "category": "Light Heavyweight\n",
+    "Fighter2": "Christian Edwards",
+    "category": "Catch Weight\n",
     "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5444
+    "prob_win_fighter1": 0.5793
   },
   {
     "Fighter1": "Timmy Cuamba",
@@ -35,11 +35,11 @@
     "prob_win_fighter1": 0.5089
   },
   {
-    "Fighter1": "Jeremiah Wells",
-    "Fighter2": "Nicolas Dalby",
+    "Fighter1": "Nikolay Veretennikov",
+    "Fighter2": "Khaos Williams",
     "category": "Welterweight\n",
     "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.4731
+    "prob_win_fighter1": 0.4156
   },
   {
     "Fighter1": "Tuco Tokkos",
@@ -49,11 +49,11 @@
     "prob_win_fighter1": 0.5694
   },
   {
-    "Fighter1": "Trey Ogden",
-    "Fighter2": "Tommy Gantt",
+    "Fighter1": "Tommy Gantt",
+    "Fighter2": "Artur Minev",
     "category": "Lightweight\n",
     "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5083
+    "prob_win_fighter1": 0.5
   },
   {
     "Fighter1": "Ketlen Vieira",
