@@ -1,93 +1,93 @@
 [
   {
-    "Fighter1": "Arnold Allen",
-    "Fighter2": "Melquizael Costa",
-    "category": "Featherweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5554
-  },
-  {
-    "Fighter1": "Dooho Choi",
-    "Fighter2": "Daniel Santos",
-    "category": "Featherweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.4621
-  },
-  {
-    "Fighter1": "Malcolm Wellmaker",
-    "Fighter2": "Juan Diaz",
+    "Fighter1": "Song Yadong",
+    "Fighter2": "Deiveson Figueiredo",
     "category": "Bantamweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5258
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.481
   },
   {
-    "Fighter1": "Modestas Bukauskas",
-    "Fighter2": "Christian Edwards",
-    "category": "Catch Weight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5793
-  },
-  {
-    "Fighter1": "Timmy Cuamba",
-    "Fighter2": "Benardo Sopaj",
-    "category": "Bantamweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5089
-  },
-  {
-    "Fighter1": "Nikolay Veretennikov",
-    "Fighter2": "Khaos Williams",
-    "category": "Welterweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.4156
-  },
-  {
-    "Fighter1": "Tuco Tokkos",
-    "Fighter2": "Ivan Erslan",
+    "Fighter1": "Zhang Mingyang",
+    "Fighter2": "Alonzo Menifield",
     "category": "Light Heavyweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5694
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.4591
   },
   {
-    "Fighter1": "Tommy Gantt",
-    "Fighter2": "Artur Minev",
-    "category": "Lightweight\n",
-    "Date": "May 16, 2026",
+    "Fighter1": "Sergei Pavlovich",
+    "Fighter2": "Tallison Teixeira",
+    "category": "Heavyweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.6704
+  },
+  {
+    "Fighter1": "Kai Asakura",
+    "Fighter2": "Cameron Smotherman",
+    "category": "Bantamweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.4793
+  },
+  {
+    "Fighter1": "Muslim Salikhov",
+    "Fighter2": "Jake Matthews",
+    "category": "Welterweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.4787
+  },
+  {
+    "Fighter1": "Alex Perez",
+    "Fighter2": "Sumudaerji",
+    "category": "Flyweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.5217
+  },
+  {
+    "Fighter1": "Yi Sak Lee",
+    "Fighter2": "Luis Felipe Dias",
+    "category": "Middleweight\n",
+    "Date": "May 30, 2026",
     "prob_win_fighter1": 0.5
   },
   {
-    "Fighter1": "Ketlen Vieira",
-    "Fighter2": "Jacqueline Cavalcanti",
-    "category": "Women's Bantamweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.4577
+    "Fighter1": "Ding Meng",
+    "Fighter2": "Jose Henrique",
+    "category": "Welterweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.5
   },
   {
-    "Fighter1": "Cody Brundage",
-    "Fighter2": "Andre Petroski",
-    "category": "Middleweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.3163
+    "Fighter1": "Aoriqileng",
+    "Fighter2": "Cody Haddon",
+    "category": "Bantamweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.476
   },
   {
-    "Fighter1": "Alice Ardelean",
-    "Fighter2": "Polyana Viana",
-    "category": "Women's Strawweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.585
-  },
-  {
-    "Fighter1": "Daniel Barez",
-    "Fighter2": "Luis Gurule",
+    "Fighter1": "Rei Tsuruya",
+    "Fighter2": "Jesus Aguilar",
     "category": "Flyweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5702
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.483
   },
   {
-    "Fighter1": "Shauna Bannon",
-    "Fighter2": "Nicolle Caliari",
+    "Fighter1": "Angela Hill",
+    "Fighter2": "Xiong Jingnan",
     "category": "Women's Strawweight\n",
-    "Date": "May 16, 2026",
-    "prob_win_fighter1": 0.5756
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.4932
+  },
+  {
+    "Fighter1": "Zhu Kangjie",
+    "Fighter2": "Ramon Taveras",
+    "category": "Featherweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.5357
+  },
+  {
+    "Fighter1": "Loma Lookboonmee",
+    "Fighter2": "Jaqueline Amorim",
+    "category": "Women's Strawweight\n",
+    "Date": "May 30, 2026",
+    "prob_win_fighter1": 0.5285
   }
 ]
